@@ -1,6 +1,7 @@
 # HDU 硕士论文 LaTeX 模板
 
 **Acknowledgement**
+
 forked from [LaTeX-HDU-Bachelor-Thesis](LaTeX-HDU-Bachelor-Thesis)
 
 主要修改内容：
@@ -17,5 +18,7 @@ forked from [LaTeX-HDU-Bachelor-Thesis](LaTeX-HDU-Bachelor-Thesis)
 
 
 **Notice**
+
 由于封面页背面是空白，所以插入了一个空页面（line:119）。
+
 示例文件：paper.pdf
