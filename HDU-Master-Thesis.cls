@@ -129,6 +129,9 @@
 \titleformat{\subsubsection}{\sffamily\fontsize{12bp}{20bp}\selectfont}{\thesubsubsection}{1em}{}
 \titlespacing{\subsubsection}{0bp}{0bp}{0bp}
 
+% 设置有序列表格式
+\renewcommand{\labelenumi}{(\theenumi)}
+
 % 设置目录格式
 \renewcommand{\contentsname}{目\hspace{2em}录}
 \contentsmargin{0bp}
@@ -164,7 +167,7 @@
 \DefineFNsymbols*{circlednumber}[text]{{①}{②}{③}{④}{⑤}{⑥}{⑦}{⑧}{⑨}{⑩}{⑪}{⑫}{⑬}{⑭}{⑮}{⑯}{⑰}{⑱}{⑲}{⑳}{㉑}{㉒}{㉓}{㉔}{㉕}{㉖}{㉗}{㉘}{㉙}{㉚}{㉛}{㉜}{㉝}{㉞}{㉟}{㊱}{㊲}{㊳}{㊴}{㊵}{㊶}{㊷}{㊸}{㊹}{㊺}{㊻}{㊼}{㊽}{㊾}{㊿}}
 \setfnsymbol{circlednumber}
 % 修复带圈数字可能无法正确显示的问题
-% \xeCJKDeclareCharClass{CJK}{`⓪,`①->`⑳,`㉑->`㉟,`㊱->`㊿,`⓿,`❶->`❿,`⓫->`⓴}
+\xeCJKDeclareCharClass{CJK}{`⓪,`①->`⑳,`㉑->`㉟,`㊱->`㊿,`⓿,`❶->`❿,`⓫->`⓴}
 
 % PDF 元数据设置
 \AtBeginDocument{\hypersetup{pdfinfo={
