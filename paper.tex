@@ -100,12 +100,10 @@
 \newtheorem{definition}{定义}
 
 \begin{document}
-% 页码在 PDF 阅读器中显示为罗马数字
-\pagenumbering{roman}
 % 关闭页眉、页脚
 \pagestyle{empty}
 
-% 按章顺序编号
+% 图表等按章顺序编号
 \numberwithin{figure}{section}
 \numberwithin{table}{section}
 \numberwithin{equation}{section}
@@ -117,12 +115,14 @@
 
 % 插入空白页保持后文奇偶
 \cleardoublepage
-% 关闭页脚
-\pagestyle{HDU-bachelor-empty}
+% 开启页眉、页脚
+\pagestyle{HDU-bachelor}
 
-% 基于本体的异构PLC程序交互方法的研究
-% An Ontology-based Semantic Model of PLC Programs for Code Exchange and Software Reuse
+% 页码为罗马数字
+\pagenumbering{roman}
 
+\phantomsection
+\addcontentsline{toc}{section}{摘要}
 \section*{摘\hspace{2em}要}
 
 随着……。然而，……。此外，……。因此，……。
@@ -139,6 +139,8 @@
 \textsf{关键词：} 系统，模型
 
 \clearpage
+\phantomsection
+\addcontentsline{toc}{section}{ABSTRACT}
 \section*{\textbf{ABSTRACT}}
 
 Regarding the development of \dots
@@ -161,8 +163,6 @@ Through the case studies, \dots
 \clearpage
 % 将页码重置为 1
 \pagenumbering{arabic}
-% 开启页脚
-\pagestyle{HDU-bachelor}
 
 \section{绪论}
 
